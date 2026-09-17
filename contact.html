@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Contact StudySpace with questions, suggestions or feedback."
+    >
+
+    <title>Contact | StudySpace</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Skip navigation -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <nav
+            class="navbar"
+            aria-label="Main navigation"
+        >
+
+            <a
+                class="logo"
+                href="index.html"
+                aria-label="StudySpace home"
+            >
+                Study<span>Space</span>
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="nav-menu"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+
+            <ul
+                class="nav-menu"
+                id="nav-menu"
+            >
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tasks.html">
+                        Tasks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="planner.html">
+                        Planner
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resources.html">
+                        Resources
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        class="active"
+                        href="contact.html"
+                        aria-current="page"
+                    >
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main content -->
+    <main id="main-content">
+
+        <section class="section">
+
+            <!-- Page heading -->
+            <div class="page-header">
+
+                <p class="eyebrow">
+                    LET'S CONNECT
+                </p>
+
+                <h1>
+                    Contact StudySpace
+                </h1>
+
+                <p>
+                    Have a question, suggestion or feedback?
+                    Send us a message.
+                </p>
+
+            </div>
+
+
+            <!-- Contact content -->
+            <section
+                class="contact-grid"
+                aria-label="Contact information and form"
+            >
+
+                <!-- Information -->
+                <div class="contact-info">
+
+                    <p class="eyebrow">
+                        GET IN TOUCH
+                    </p>
+
+                    <h2>
+                        We'd love to hear from you.
+                    </h2>
+
+                    <p>
+                        StudySpace is designed to make student
+                        productivity simpler. Share your ideas
+                        or let us know how we can improve it.
+                    </p>
+
+
+                    <div class="contact-details">
+
+                        <div>
+                            <strong>
+                                Response
+                            </strong>
+
+                            <span>
+                                We aim to respond as soon as possible.
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <strong>
+                                Feedback
+                            </strong>
+
+                            <span>
+                                Suggestions are always welcome.
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <strong>
+                                Support
+                            </strong>
+
+                            <span>
+                                Tell us what you need help with.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Form -->
+                <div class="card">
+
+                    <h2>
+                        Send a message
+                    </h2>
+
+                    <p>
+                        All fields marked with
+                        <span aria-hidden="true">*</span>
+                        are required.
+                    </p>
+
+
+                    <form
+                        id="contact-form"
+                        novalidate
+                    >
+
+                        <!-- Name -->
+                        <div class="form-group">
+
+                            <label for="name">
+                                Full name
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                autocomplete="name"
+                                required
+                                minlength="2"
+                                maxlength="60"
+                                aria-describedby="name-error"
+                            >
+
+                            <span
+                                class="error-message"
+                                id="name-error"
+                                role="alert"
+                            ></span>
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email address
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                                aria-describedby="email-error"
+                            >
+
+                            <span
+                                class="error-message"
+                                id="email-error"
+                                role="alert"
+                            ></span>
+
+                        </div>
+
+
+                        <!-- Subject -->
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <select
+                                id="subject"
+                                name="subject"
+                                required
+                                aria-describedby="subject-error"
+                            >
+
+                                <option value="">
+                                    Select a subject
+                                </option>
+
+                                <option value="feedback">
+                                    Feedback
+                                </option>
+
+                                <option value="suggestion">
+                                    Suggestion
+                                </option>
+
+                                <option value="support">
+                                    Support
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                            <span
+                                class="error-message"
+                                id="subject-error"
+                                role="alert"
+                            ></span>
+
+                        </div>
+
+
+                        <!-- Message -->
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                                <span aria-hidden="true">*</span>
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Write your message here..."
+                                required
+                                minlength="10"
+                                maxlength="500"
+                                aria-describedby="message-help message-error"
+                            ></textarea>
+
+                            <small id="message-help">
+                                Please enter at least 10 characters.
+                            </small>
+
+                            <span
+                                class="error-message"
+                                id="message-error"
+                                role="alert"
+                            ></span>
+
+                        </div>
+
+
+                        <!-- Submit -->
+                        <button
+                            class="btn btn-primary"
+                            type="submit"
+                        >
+                            Send Message
+                        </button>
+
+
+                        <!-- Accessible status -->
+                        <p
+                            id="contact-status"
+                            class="success-message"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+            <!-- Bottom navigation -->
+            <section
+                class="section"
+                aria-labelledby="next-step-title"
+            >
+
+                <div class="quote-card">
+
+                    <p class="eyebrow">
+                        KEEP GOING
+                    </p>
+
+                    <h2 id="next-step-title">
+                        Ready to get organized?
+                    </h2>
+
+                    <p>
+                        Create your tasks and start planning
+                        your study week.
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a
+                            class="btn btn-primary"
+                            href="tasks.html"
+                        >
+                            Manage Tasks
+                        </a>
+
+                        <a
+                            class="btn btn-secondary"
+                            href="planner.html"
+                        >
+                            Open Planner
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div>
+
+            <strong>
+                StudySpace
+            </strong>
+
+            <p>
+                Designed for focused student life.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 StudySpace
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+
+</body>
+
+</html>
