@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="StudySpace is a responsive and accessible student productivity dashboard."
+    >
+
+    <title>StudySpace | Student Productivity</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Keyboard accessibility -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a
+                class="logo"
+                href="index.html"
+                aria-label="StudySpace home"
+            >
+                Study<span>Space</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="nav-menu"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+
+                <li>
+                    <a
+                        class="active"
+                        href="index.html"
+                        aria-current="page"
+                    >
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tasks.html">
+                        Tasks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="planner.html">
+                        Planner
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resources.html">
+                        Resources
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main content -->
+    <main id="main-content">
+
+        <!-- Hero -->
+        <section class="hero section">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    YOUR STUDY. YOUR SPACE.
+                </p>
+
+                <h1>
+                    Make every study session
+                    <span>count.</span>
+                </h1>
+
+                <p class="hero-text">
+                    StudySpace helps students organize tasks,
+                    plan study sessions, and keep useful resources
+                    in one simple workspace.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a
+                        class="btn btn-primary"
+                        href="tasks.html"
+                    >
+                        Manage Tasks
+                    </a>
+
+                    <a
+                        class="btn btn-secondary"
+                        href="planner.html"
+                    >
+                        View Planner
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Progress card -->
+            <div
+                class="hero-card"
+                aria-label="Today's study summary"
+            >
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <p class="small-label">
+                            TODAY
+                        </p>
+
+                        <h2>
+                            Study Progress
+                        </h2>
+
+                    </div>
+
+                    <span
+                        class="progress-circle"
+                        aria-label="75 percent complete"
+                    >
+                        75%
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-label="Today's study progress"
+                >
+                    <span style="width: 75%"></span>
+                </div>
+
+
+                <div class="mini-stats">
+
+                    <div>
+                        <strong>3</strong>
+                        <span>Tasks done</span>
+                    </div>
+
+                    <div>
+                        <strong>2h</strong>
+                        <span>Study time</span>
+                    </div>
+
+                    <div>
+                        <strong>4</strong>
+                        <span>Tasks left</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features -->
+        <section
+            class="section"
+            aria-labelledby="features-title"
+        >
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    EVERYTHING IN ONE PLACE
+                </p>
+
+                <h2 id="features-title">
+                    Build a better study routine.
+                </h2>
+
+                <p>
+                    Simple tools designed around the everyday
+                    needs of students.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+                    <div
+                        class="feature-icon"
+                        aria-hidden="true"
+                    >
+                        ✓
+                    </div>
+
+                    <h3>
+                        Task Manager
+                    </h3>
+
+                    <p>
+                        Keep assignments, projects and deadlines
+                        organized.
+                    </p>
+
+                    <a href="tasks.html">
+                        Explore tasks →
+                    </a>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div
+                        class="feature-icon"
+                        aria-hidden="true"
+                    >
+                        ◷
+                    </div>
+
+                    <h3>
+                        Study Planner
+                    </h3>
+
+                    <p>
+                        Plan your week and create focused
+                        study sessions.
+                    </p>
+
+                    <a href="planner.html">
+                        View planner →
+                    </a>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div
+                        class="feature-icon"
+                        aria-hidden="true"
+                    >
+                        ▣
+                    </div>
+
+                    <h3>
+                        Resources
+                    </h3>
+
+                    <p>
+                        Keep your useful learning resources
+                        easy to find.
+                    </p>
+
+                    <a href="resources.html">
+                        Browse resources →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quote -->
+        <section
+            class="section quote-section"
+            aria-labelledby="quote-title"
+        >
+
+            <div class="quote-card">
+
+                <p class="eyebrow">
+                    A SMALL REMINDER
+                </p>
+
+                <h2 id="quote-title">
+                    Consistency beats last-minute panic.
+                </h2>
+
+                <p>
+                    You don't have to study everything today.
+                    Just make today's progress count.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div>
+
+            <strong>
+                StudySpace
+            </strong>
+
+            <p>
+                Designed for focused student life.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 StudySpace
+        </p>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
