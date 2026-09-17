@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="StudySpace task manager for organizing assignments, projects and deadlines."
+    >
+
+    <title>Tasks | StudySpace</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Skip navigation -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <nav
+            class="navbar"
+            aria-label="Main navigation"
+        >
+
+            <a
+                class="logo"
+                href="index.html"
+                aria-label="StudySpace home"
+            >
+                Study<span>Space</span>
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="nav-menu"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+
+            <ul
+                class="nav-menu"
+                id="nav-menu"
+            >
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        class="active"
+                        href="tasks.html"
+                        aria-current="page"
+                    >
+                        Tasks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="planner.html">
+                        Planner
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resources.html">
+                        Resources
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+    <main id="main-content">
+
+        <section class="section">
+
+            <!-- Page heading -->
+            <div class="page-header">
+
+                <p class="eyebrow">
+                    STAY ORGANIZED
+                </p>
+
+                <h1>
+                    Your Tasks
+                </h1>
+
+                <p>
+                    Add assignments, projects and study goals.
+                    Your tasks are saved automatically in this browser.
+                </p>
+
+            </div>
+
+
+            <!-- Add task -->
+            <section
+                class="card"
+                aria-labelledby="add-task-title"
+            >
+
+                <h2 id="add-task-title">
+                    Add a new task
+                </h2>
+
+                <p>
+                    Fill in the details below to create a task.
+                </p>
+
+
+                <form
+                    id="task-form"
+                    novalidate
+                >
+
+                    <div class="form-group">
+
+                        <label for="task-title">
+                            Task title
+                        </label>
+
+                        <input
+                            type="text"
+                            id="task-title"
+                            name="task-title"
+                            placeholder="Example: Complete DBMS assignment"
+                            required
+                            maxlength="100"
+                            autocomplete="off"
+                            aria-describedby="task-title-error"
+                        >
+
+                        <span
+                            class="error-message"
+                            id="task-title-error"
+                            role="alert"
+                        ></span>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="task-date">
+                            Due date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="task-date"
+                            name="task-date"
+                            required
+                            aria-describedby="task-date-error"
+                        >
+
+                        <span
+                            class="error-message"
+                            id="task-date-error"
+                            role="alert"
+                        ></span>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="task-priority">
+                            Priority
+                        </label>
+
+                        <select
+                            id="task-priority"
+                            name="task-priority"
+                            required
+                        >
+
+                            <option value="">
+                                Select priority
+                            </option>
+
+                            <option value="High">
+                                High
+                            </option>
+
+                            <option value="Medium">
+                                Medium
+                            </option>
+
+                            <option value="Low">
+                                Low
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        class="btn btn-primary"
+                        type="submit"
+                    >
+                        Add Task
+                    </button>
+
+
+                    <p
+                        id="task-form-status"
+                        class="success-message"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </section>
+
+
+            <!-- Task list -->
+            <section
+                class="section"
+                aria-labelledby="task-list-title"
+            >
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        YOUR WORK
+                    </p>
+
+                    <h2 id="task-list-title">
+                        Task List
+                    </h2>
+
+                    <p>
+                        Mark completed tasks or remove tasks
+                        you no longer need.
+                    </p>
+
+                </div>
+
+
+                <!-- JavaScript inserts tasks here -->
+                <div
+                    class="task-list"
+                    id="task-list"
+                    aria-live="polite"
+                    aria-label="Your tasks"
+                ></div>
+
+
+                <!-- Empty state -->
+                <p
+                    id="empty-state"
+                    class="card"
+                    role="status"
+                >
+                    No tasks yet. Add your first task above.
+                </p>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div>
+
+            <strong>
+                StudySpace
+            </strong>
+
+            <p>
+                Designed for focused student life.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 StudySpace
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/tasks.js"></script>
+
+</body>
+
+</html>
