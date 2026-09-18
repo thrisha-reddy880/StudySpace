@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -11,23 +12,30 @@
 
     <meta
         name="description"
-        content="StudySpace learning resources for programming, databases, web development and accessibility."
+        content="Useful learning resources for students using StudySpace."
     >
 
     <title>Resources | StudySpace</title>
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
-    <!-- Skip navigation -->
-    <a class="skip-link" href="#main-content">
+    <!-- Skip link for keyboard users -->
+
+    <a
+        class="skip-link"
+        href="#main-content"
+    >
         Skip to main content
     </a>
 
 
-    <!-- Header -->
+    <!-- ================= HEADER ================= -->
+
     <header class="site-header">
 
         <nav
@@ -66,17 +74,20 @@
                     </a>
                 </li>
 
+
                 <li>
                     <a href="tasks.html">
                         Tasks
                     </a>
                 </li>
 
+
                 <li>
                     <a href="planner.html">
                         Planner
                     </a>
                 </li>
+
 
                 <li>
                     <a
@@ -87,6 +98,7 @@
                         Resources
                     </a>
                 </li>
+
 
                 <li>
                     <a href="contact.html">
@@ -101,301 +113,306 @@
     </header>
 
 
-    <!-- Main content -->
+    <!-- ================= MAIN ================= -->
+
     <main id="main-content">
 
-        <section class="section">
 
-            <!-- Page heading -->
-            <div class="page-header">
+        <!-- Page Header -->
 
-                <p class="eyebrow">
-                    KEEP LEARNING
-                </p>
+        <section class="section page-header">
 
-                <h1>
-                    Learning Resources
-                </h1>
+            <p class="eyebrow">
+                KEEP LEARNING
+            </p>
 
-                <p>
-                    A small collection of useful learning
-                    platforms and documentation for students.
-                </p>
+
+            <h1>
+                Useful Resources
+            </h1>
+
+
+            <p>
+                Explore reliable references for programming,
+                databases, web development and accessibility.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= RESOURCE CARDS ================= -->
+
+        <section
+            class="section"
+            aria-labelledby="resources-title"
+        >
+
+            <h2
+                id="resources-title"
+                class="visually-hidden"
+            >
+                Learning Resources
+            </h2>
+
+
+            <div class="resource-grid">
+
+
+                <!-- Data Structures -->
+
+                <article class="resource-card">
+
+                    <div
+                        class="feature-icon"
+                        aria-hidden="true"
+                    >
+                        DS
+                    </div>
+
+
+                    <h3>
+                        Data Structures
+                    </h3>
+
+
+                    <p>
+                        Learn algorithms, data structures,
+                        programming concepts and problem-solving.
+                    </p>
+
+
+                    <a
+                        href="https://www.geeksforgeeks.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit GeeksforGeeks"
+                    >
+                        Visit GeeksforGeeks →
+                    </a>
+
+                </article>
+
+
+
+                <!-- MDN -->
+
+                <article class="resource-card">
+
+                    <div
+                        class="feature-icon"
+                        aria-hidden="true"
+                    >
+                        JS
+                    </div>
+
+
+                    <h3>
+                        MDN Web Docs
+                    </h3>
+
+
+                    <p>
+                        Reference documentation for HTML,
+                        CSS, JavaScript and modern web APIs.
+                    </p>
+
+
+                    <a
+                        href="https://developer.mozilla.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit MDN Web Docs"
+                    >
+                        Visit MDN →
+                    </a>
+
+                </article>
+
+
+
+                <!-- PostgreSQL -->
+
+                <article class="resource-card">
+
+                    <div
+                        class="feature-icon"
+                        aria-hidden="true"
+                    >
+                        DB
+                    </div>
+
+
+                    <h3>
+                        PostgreSQL Documentation
+                    </h3>
+
+
+                    <p>
+                        Official documentation for SQL,
+                        PostgreSQL databases and database concepts.
+                    </p>
+
+
+                    <a
+                        href="https://www.postgresql.org/docs/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Read PostgreSQL documentation"
+                    >
+                        Read PostgreSQL Docs →
+                    </a>
+
+                </article>
+
+
+
+                <!-- W3C -->
+
+                <article class="resource-card">
+
+                    <div
+                        class="feature-icon"
+                        aria-hidden="true"
+                    >
+                        A11Y
+                    </div>
+
+
+                    <h3>
+                        Web Accessibility
+                    </h3>
+
+
+                    <p>
+                        Learn how to create websites that are
+                        usable and accessible to everyone.
+                    </p>
+
+
+                    <a
+                        href="https://www.w3.org/WAI/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit W3C Web Accessibility Initiative"
+                    >
+                        Visit W3C WAI →
+                    </a>
+
+                </article>
+
+
+
+                <!-- Python -->
+
+                <article class="resource-card">
+
+                    <div
+                        class="feature-icon"
+                        aria-hidden="true"
+                    >
+                        PY
+                    </div>
+
+
+                    <h3>
+                        Python Documentation
+                    </h3>
+
+
+                    <p>
+                        Official Python documentation for learning
+                        the language and standard library.
+                    </p>
+
+
+                    <a
+                        href="https://docs.python.org/3/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Read Python documentation"
+                    >
+                        Read Python Docs →
+                    </a>
+
+                </article>
+
+
+
+                <!-- GitHub Skills -->
+
+                <article class="resource-card">
+
+                    <div
+                        class="feature-icon"
+                        aria-hidden="true"
+                    >
+                        GH
+                    </div>
+
+
+                    <h3>
+                        GitHub Skills
+                    </h3>
+
+
+                    <p>
+                        Practice GitHub workflows and learn
+                        development skills through interactive courses.
+                    </p>
+
+
+                    <a
+                        href="https://skills.github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Explore GitHub Skills"
+                    >
+                        Explore GitHub Skills →
+                    </a>
+
+                </article>
 
             </div>
 
+        </section>
 
-            <!-- Resources -->
-            <section
-                aria-labelledby="resources-title"
-            >
 
-                <div class="section-heading">
 
-                    <h2 id="resources-title">
-                        Useful Resources
-                    </h2>
+        <!-- ================= ACTIONS ================= -->
 
-                    <p>
-                        Explore reliable references for
-                        programming, databases, web development
-                        and accessibility.
-                    </p>
+        <section
+            class="section"
+            aria-label="Resource navigation"
+        >
 
-                </div>
+            <div class="hero-actions">
 
+                <a
+                    class="btn btn-primary"
+                    href="tasks.html"
+                >
+                    Manage Tasks
+                </a>
 
-                <div class="resource-grid">
 
-                    <!-- Data Structures -->
-                    <article class="resource-card">
+                <a
+                    class="btn btn-secondary"
+                    href="contact.html"
+                >
+                    Contact Us
+                </a>
 
-                        <div
-                            class="feature-icon"
-                            aria-hidden="true"
-                        >
-                            DS
-                        </div>
-
-                        <h3>
-                            Data Structures
-                        </h3>
-
-                        <p>
-                            Learn algorithms, data structures,
-                            programming concepts and problem-solving.
-                        </p>
-
-                        <a
-                            href="https://www.geeksforgeeks.org/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Learn Data Structures on GeeksforGeeks, opens in a new tab"
-                        >
-                            Visit GeeksforGeeks →
-                        </a>
-
-                    </article>
-
-
-                    <!-- MDN -->
-                    <article class="resource-card">
-
-                        <div
-                            class="feature-icon"
-                            aria-hidden="true"
-                        >
-                            JS
-                        </div>
-
-                        <h3>
-                            MDN Web Docs
-                        </h3>
-
-                        <p>
-                            Reference documentation for HTML,
-                            CSS, JavaScript and modern web APIs.
-                        </p>
-
-                        <a
-                            href="https://developer.mozilla.org/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Visit MDN Web Docs, opens in a new tab"
-                        >
-                            Visit MDN →
-                        </a>
-
-                    </article>
-
-
-                    <!-- PostgreSQL -->
-                    <article class="resource-card">
-
-                        <div
-                            class="feature-icon"
-                            aria-hidden="true"
-                        >
-                            DB
-                        </div>
-
-                        <h3>
-                            PostgreSQL Documentation
-                        </h3>
-
-                        <p>
-                            Official documentation for SQL,
-                            PostgreSQL databases and database concepts.
-                        </p>
-
-                        <a
-                            href="https://www.postgresql.org/docs/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Read PostgreSQL documentation, opens in a new tab"
-                        >
-                            Read PostgreSQL Docs →
-                        </a>
-
-                    </article>
-
-
-                    <!-- W3C -->
-                    <article class="resource-card">
-
-                        <div
-                            class="feature-icon"
-                            aria-hidden="true"
-                        >
-                            A11Y
-                        </div>
-
-                        <h3>
-                            Web Accessibility
-                        </h3>
-
-                        <p>
-                            Learn how to create websites that
-                            are usable and accessible to everyone.
-                        </p>
-
-                        <a
-                            href="https://www.w3.org/WAI/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Learn about web accessibility from W3C WAI, opens in a new tab"
-                        >
-                            Visit W3C WAI →
-                        </a>
-
-                    </article>
-
-
-                    <!-- Python -->
-                    <article class="resource-card">
-
-                        <div
-                            class="feature-icon"
-                            aria-hidden="true"
-                        >
-                            PY
-                        </div>
-
-                        <h3>
-                            Python Documentation
-                        </h3>
-
-                        <p>
-                            Official Python documentation for
-                            learning the language and standard library.
-                        </p>
-
-                        <a
-                            href="https://docs.python.org/3/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Read Python documentation, opens in a new tab"
-                        >
-                            Read Python Docs →
-                        </a>
-
-                    </article>
-
-
-                    <!-- GitHub -->
-                    <article class="resource-card">
-
-                        <div
-                            class="feature-icon"
-                            aria-hidden="true"
-                        >
-                            GH
-                        </div>
-
-                        <h3>
-                            GitHub Skills
-                        </h3>
-
-                        <p>
-                            Practice GitHub workflows and learn
-                            development skills through interactive courses.
-                        </p>
-
-                        <a
-                            href="https://skills.github.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Explore GitHub Skills, opens in a new tab"
-                        >
-                            Explore GitHub Skills →
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </section>
-
-
-            <!-- Accessibility note -->
-            <section
-                class="section"
-                aria-labelledby="accessibility-title"
-            >
-
-                <div class="quote-card">
-
-                    <p class="eyebrow">
-                        ACCESSIBILITY MATTERS
-                    </p>
-
-                    <h2 id="accessibility-title">
-                        The web should work for everyone.
-                    </h2>
-
-                    <p>
-                        Use semantic HTML, meaningful labels,
-                        keyboard navigation, visible focus states
-                        and accessible color contrast when building
-                        your projects.
-                    </p>
-
-                </div>
-
-            </section>
-
-
-            <!-- Navigation actions -->
-            <section
-                aria-label="Resource actions"
-            >
-
-                <div class="hero-actions">
-
-                    <a
-                        class="btn btn-primary"
-                        href="tasks.html"
-                    >
-                        Manage Tasks
-                    </a>
-
-                    <a
-                        class="btn btn-secondary"
-                        href="contact.html"
-                    >
-                        Contact Us
-                    </a>
-
-                </div>
-
-            </section>
+            </div>
 
         </section>
 
     </main>
 
 
-    <!-- Footer -->
+
+    <!-- ================= FOOTER ================= -->
+
     <footer class="site-footer">
 
         <div>
@@ -404,11 +421,13 @@
                 StudySpace
             </strong>
 
+
             <p>
                 Designed for focused student life.
             </p>
 
         </div>
+
 
         <p>
             © 2026 StudySpace
@@ -417,7 +436,6 @@
     </footer>
 
 
-    <!-- JavaScript -->
     <script src="js/main.js"></script>
 
 </body>
