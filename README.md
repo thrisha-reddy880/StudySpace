@@ -226,3 +226,110 @@ StudySpace/
 │
 └── lighthouse/
     └── accessibility-report.html
+```
+
+> The `screenshots` and `lighthouse` folders can contain the final evidence files used for project documentation.
+
+---
+
+## 💾 Task Persistence
+
+The Task Manager uses browser **LocalStorage**.
+
+Tasks remain available after refreshing the page in the same browser.
+
+The application stores task data using the LocalStorage key:
+
+```text
+studyspace_tasks
+```
+
+No external database is used because this project focuses on frontend responsiveness, usability, and accessibility.
+
+---
+
+## 🚀 How to Run
+
+### Option 1 — Open Locally
+
+1. Clone or download the repository.
+2. Open the project folder.
+3. Open `index.html` in a browser.
+
+### Option 2 — Use a Local Development Server
+
+Using VS Code:
+
+1. Open the StudySpace folder.
+2. Install the Live Server extension if required.
+3. Right-click `index.html`.
+4. Select **Open with Live Server**.
+
+---
+
+## 🌐 Live Demo
+
+**StudySpace Live Website:**
+
+https://studyspace-4qt8.onrender.com
+
+---
+
+## 💻 GitHub Repository
+
+https://github.com/thrisha-reddy880/StudySpace
+
+---
+
+## 🎓 Task Requirement Mapping
+
+| Requirement | Implementation |
+|---|---|
+| Responsive interface | Responsive CSS layouts |
+| 360px mobile support | Small-screen responsive rules |
+| No horizontal scrolling | Responsive containers and stacked layouts |
+| Keyboard navigation | Tab, Shift + Tab, Enter and Escape support |
+| Visible focus | `:focus-visible` styles |
+| Accessible forms | Labels, validation messages and ARIA attributes |
+| Meaningful content structure | Semantic HTML5 |
+| Responsive navigation | Mobile navigation menu |
+| Task functionality | JavaScript + LocalStorage |
+| Mobile-friendly planner | Responsive weekly schedule |
+| Accessible controls | ARIA labels and descriptive names |
+| Lighthouse testing | Google Lighthouse / PageSpeed Insights |
+| Public deployment | Render |
+| Source code | GitHub |
+
+---
+
+## 🔮 Future Improvements
+
+Possible future enhancements include:
+
+- User authentication
+- Cloud-based task storage
+- Calendar integration
+- Study reminders
+- Dark mode
+- Subject progress analytics
+- AI study assistant
+- Cloud synchronization across devices
+
+---
+
+## 👩‍💻 Author
+
+**Thrisha Reddy**
+
+B.Tech CSE — Data Science Student
+
+GitHub:  
+https://github.com/thrisha-reddy880
+
+---
+
+## ⭐ Project
+
+If you find StudySpace useful, consider giving the repository a ⭐ on GitHub.
+
+**StudySpace — Learn. Plan. Focus. Grow.**
